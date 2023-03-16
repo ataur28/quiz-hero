@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-4xl text-center mt-12">Question And Answer</h1>
+    </header>
+    <main>
+        <section class="mt-10 mx-6 mb-10">
+            <div>
+                <h1 class="text-2xl mt-6 mb-4">1. What is the difference between .map() .filter() .foreach() and .find()
+                    in javascript?</h1>
+                <p><span class="font-medium">Answer: </span></p>
+                <p><span class="underline underline-offset-4">.forEach():</span> This function is another form of just a
+                    plain for loop that can be used to iterate through array items.</p>
+                <p><span class="underline underline-offset-4">.map():</span> This function returns a new array with
+                    modified values.</p>
+                <p><span class="underline underline-offset-4">.filter():</span>This function is a search function that returns all the
+                    elements that fulfil the assigned condition.</p>
+                <p><span class="underline underline-offset-4">.find():</span> This function returns only one match in
+                    an array.</p>
+            </div>
+            <div>
+                <h1 class="text-2xl mt-6 mb-4">2. What is difference between LocalStorage SessionStorage and Cookies?</h1>
+                <p><span class="font-medium">Answer: </span></p>
+                <p><span class="underline underline-offset-4">LocalStorage:</span> 
+                    <ul class="list-disc ml-10">
+                        <li>5MB/10MB storage</li>
+                        <li>it's not session based, need to be deleted via JS or manually</li>
+                        <li>Client side resding only</li>
+                        <li>Less older browsers support</li>
+                    </ul>
+                </p>
+                <p><span class="underline underline-offset-4">SessionStorage:</span> 
+                    <ul class="list-disc ml-10">
+                        <li>5MB storage</li>
+                        <li>it's session based, working per window or tab</li>
+                        <li>Client side resding only</li>
+                        <li>Less older browsers support</li>
+                    </ul>
+                </p>
+                <p><span class="underline underline-offset-4">Cookie:</span> 
+                    <ul class="list-disc ml-10">
+                        <li>4KB storage</li>
+                        <li>Expiry depends on the setting and working oer window or tab</li>
+                        <li>server and Client side resding only</li>
+                        <li>More older browsers support</li>
+                    </ul>
+                </p>
+            </div>
+            <div>
+                <h1 class="text-2xl mt-6 mb-4">3. What is event queue and how it works?</h1>
+                <p><span class="font-medium">Answer: </span>Event Loop monitor the Call Stack and the Callback Queue.If the call stack is empty, the event loop will take the first event from the queue and push it onto the call stack, which effectively executes it. This type of repetition is called a tick.</p>   
+            </div>
+            <div>
+                <h1 class="text-2xl mt-6 mb-4">4. What is the fonction of quizTimer() function?</h1>
+                <p><span class="font-medium">Answer: </span>This functon count the quiz time.This function used setInterval() and clearinterval().The setInterval() method repeatedly calls a function or executes a code snippet, with a fixed time delay between each call. The clearInterval function used to stop the event of the recurring calling of a function at a fixed delay set by the setInterval() function.</p>   
+            </div>
+            <div>
+                <h1 class="text-2xl mt-6 mb-4">5. What is the fonction of chooseQuiz() function?</h1>
+                <p><span class="font-medium">Answer: </span>This functon used coose quiz option for correct asnwer. When select wrong answer. This function given opportunity select right answer.This function maintain qusetion answer sequence and when select right answer. this answer push in quizdata array.</p>   
+            </div>
+            
+        </section>
+    </main>
+
+</body>
+
+</html>
