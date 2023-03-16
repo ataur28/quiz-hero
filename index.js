@@ -53,14 +53,14 @@ const loadQuiz = async () => {
 
 // Displaying quiz on quiz page
 const displayQuiz = (data) => {
-  console.log(data);
+  // console.log(data);
   if (!data) {
     quizContainer.innerHTML = "";
     return;
   }
 
   data.forEach((quiz, i) => {
-    console.log(i + 1);
+    // console.log(i + 1);
     // console.log(quiz.question);
     // console.log(quiz.options);
     const quizContainerQuestion = document.createElement('div');
