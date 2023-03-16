@@ -61,8 +61,8 @@ const displayQuiz = (data) => {
 
   data.forEach((quiz, i) => {
     console.log(i + 1);
-    console.log(quiz.question);
-    console.log(quiz.options);
+    // console.log(quiz.question);
+    // console.log(quiz.options);
     const quizContainerQuestion = document.createElement('div');
     quizContainerQuestion.innerHTML = `<div class="m-3 py-3 px-4 shadow-sm rounded">
                                   <div class="flex items-center">
@@ -115,7 +115,7 @@ document.querySelector("#submit").addEventListener("click", () => {
 
   // data setting on local storage and getting data from local storage
   let storage = JSON.parse(localStorage.getItem("results"));
-  console.log(storage);
+  // console.log(storage);
   if (storage) {
     localStorage.setItem(
       "results",
